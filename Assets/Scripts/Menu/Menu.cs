@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 [AddComponentMenu("Village/Menu/Main menu")]
 public class Menu : MonoBehaviour
 {
-    public GameObject apperancePanel;
-    public GameObject classPanel;
+    
     
     public void LoadScene(int sceneID)
     {
@@ -22,14 +21,5 @@ public class Menu : MonoBehaviour
 #endif
         Application.Quit();
     }
-    public void ApperanceButton()
-    {
-        apperancePanel.SetActive(true);
-        classPanel.SetActive(false);
-    }
-    public void ClassButton()
-    {
-        classPanel.SetActive(true);
-        apperancePanel.SetActive(false);
-    }
+  
 }

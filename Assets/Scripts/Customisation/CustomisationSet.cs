@@ -38,6 +38,9 @@ public class CustomisationSet : MonoBehaviour
     public string[] selectedClass = new string[8];
     public int selectedIndex = 0;
 
+    public GameObject apperancePanel;
+    public GameObject classPanel;
+
     #endregion
 
     #region Start
@@ -207,19 +210,21 @@ public class CustomisationSet : MonoBehaviour
     {
         SetTexture(type, 1);
     }
-
-    public void ClassButton()
-    {
-
-    }
-
     public void ApperanceButton()
     {
-
+        apperancePanel.SetActive(true);
+        classPanel.SetActive(false);
     }
+    public void ClassButton()
+    {
+        classPanel.SetActive(true);
+        apperancePanel.SetActive(false);
+    }
+
+
     #endregion
 
-  
+
 
 
 
